@@ -5,36 +5,36 @@ go 1.24.0
 toolchain go1.24.2
 
 require (
-	github.com/elastic/go-elasticsearch/v7 v7.17.10
-	github.com/elastic/go-elasticsearch/v8 v8.18.0
-	github.com/gin-contrib/cors v1.7.5
-	github.com/gin-gonic/gin v1.10.0
-	github.com/go-viper/mapstructure/v2 v2.2.1
-	github.com/google/uuid v1.6.0
-	github.com/hibiken/asynq v0.25.1
-	github.com/minio/minio-go/v7 v7.0.90
-	github.com/ollama/ollama v0.9.6
-	github.com/panjf2000/ants/v2 v2.11.2
-	github.com/parquet-go/parquet-go v0.25.0
-	github.com/pgvector/pgvector-go v0.3.0
-	github.com/redis/go-redis/v9 v9.7.3
-	github.com/sashabaranov/go-openai v1.40.5
-	github.com/sirupsen/logrus v1.9.3
-	github.com/spf13/viper v1.20.1
-	github.com/tencentyun/cos-go-sdk-v5 v0.7.65
-	github.com/yanyiwu/gojieba v1.4.5
-	go.opentelemetry.io/otel v1.37.0
+	github.com/elastic/go-elasticsearch/v7 v7.17.10 //ES引擎V7
+	github.com/elastic/go-elasticsearch/v8 v8.18.0 //ES引擎V8
+	github.com/gin-contrib/cors v1.7.5 //跨域资源共享中间件,解决前后端分离的跨域问题
+	github.com/gin-gonic/gin v1.10.0 //HTTP Web框架
+	github.com/go-viper/mapstructure/v2 v2.2.1 //结构体映射工具
+	github.com/google/uuid v1.6.0 //UUID生成库
+	github.com/hibiken/asynq v0.25.1 //Redis支持的分布式任务队列,用于异步文档处理
+	github.com/minio/minio-go/v7 v7.0.90 //MinIO对象存储客户端,兼容S3
+	github.com/ollama/ollama v0.9.6 //本地大模型运行框架的Go客户端
+	github.com/panjf2000/ants/v2 v2.11.2 //高性能协程池,限制并发数量
+	github.com/parquet-go/parquet-go v0.25.0 //Parquest列式存储格式处理,用于数据集管理(这个不知道有什么用)
+	github.com/pgvector/pgvector-go v0.3.0 //PostgreSQL向量扩展的Go客户端,用于向量相似度搜索
+	github.com/redis/go-redis/v9 v9.7.3 //Redis缓存数据库客户端,用于会话管理和缓存
+	github.com/sashabaranov/go-openai v1.40.5 //OpenAI API的Go客户端，支持ChatGPT,GPT-4等
+	github.com/sirupsen/logrus v1.9.3 //结构化日志库
+	github.com/spf13/viper v1.20.1 //配置管理库，支持多种配置格式
+	github.com/tencentyun/cos-go-sdk-v5 v0.7.65 //腾讯云对象存储COS
+	github.com/yanyiwu/gojieba v1.4.5 //中文分词库
+	go.opentelemetry.io/otel v1.37.0 //现代化的可观测性框架，用于分布式链路追踪和性能监控
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.37.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.37.0
 	go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.35.0
 	go.opentelemetry.io/otel/sdk v1.37.0
 	go.opentelemetry.io/otel/trace v1.37.0
-	go.uber.org/dig v1.18.1
-	golang.org/x/sync v0.15.0
-	google.golang.org/grpc v1.73.0
-	google.golang.org/protobuf v1.36.6
-	gorm.io/driver/postgres v1.5.11
-	gorm.io/gorm v1.25.12
+	go.uber.org/dig v1.18.1 //依赖注入容器
+	golang.org/x/sync v0.15.0 //Go官方同步包
+	google.golang.org/grpc v1.73.0 //gRPC框架，用于与Python文档解析服务通信
+	google.golang.org/protobuf v1.36.6 //Protocol Buffers序列化库
+	gorm.io/driver/postgres v1.5.11 // PostgreSQL数据库驱动
+	gorm.io/gorm v1.25.12 //ORM框架，做数据库操作的
 )
 
 require (
